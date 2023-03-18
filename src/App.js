@@ -1,9 +1,8 @@
 // *****Import Modules*****
-import React from "react";
+import React from 'react';
+import MainContainer from './components/MainContainer';
 
 
-function App() {
-
-}
+const App = () => <MainContainer />;
 
 export default App;
