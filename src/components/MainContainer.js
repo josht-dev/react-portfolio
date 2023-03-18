@@ -16,7 +16,21 @@ export default function MainContainer() {
 
   // Switch render between pages when called
   const renderPage = () => {
-
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
+    }
+    if (currentPage === 'Work') {
+      return <Work />;
+    }
   }
 
   // Function to handle the page change
