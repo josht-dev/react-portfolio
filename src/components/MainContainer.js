@@ -5,6 +5,9 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Work from './pages/Work';
+import Navigation from './Navigation';
+import Header from './Header';
+import Footer from './Footer';
 
 // Export function that handles page switching
 export default function MainContainer() {
@@ -21,6 +24,11 @@ export default function MainContainer() {
    
   // Return the new component
   return (
-    
-  )
+    <main>
+      <Header />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+      <Footer />
+    </main>
+  );
 }
