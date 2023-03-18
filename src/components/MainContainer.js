@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
+//import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Work from './pages/Work';
 import Navigation from './Navigation';
