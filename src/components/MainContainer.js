@@ -8,5 +8,19 @@ import Work from './pages/Work';
 
 // Export function that handles page switching
 export default function MainContainer() {
-  
+  // Page state
+  const [currentPage, setCurrentPage] = useState('Home');
+
+  // Switch render between pages when called
+  const renderPage = () => {
+
+  }
+
+  // Function to handle the page change
+  const handlePageChange = (page) => setCurrentPage(page);
+   
+  // Return the new component
+  return (
+    
+  )
 }
