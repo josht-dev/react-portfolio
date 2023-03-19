@@ -17,6 +17,7 @@ const styles = {
     width: '812px',
     margin: 'auto',
     backgroundColor: '#F5F5F5',
+    textAlign: 'center'
   }
 }
 
