@@ -18,3 +18,5 @@ function Navigation({ currentPage, handlePageChange }) {
     </nav>
   )
 }
+
+export default Navigation;
