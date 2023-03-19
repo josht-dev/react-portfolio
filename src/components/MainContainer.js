@@ -9,6 +9,7 @@ import Navigation from './Navigation';
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/reset.css';
+import '../styles/Style.css';
 
 // Styling for main
 const styles = {
