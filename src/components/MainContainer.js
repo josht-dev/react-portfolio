@@ -44,7 +44,7 @@ export default function MainContainer() {
       {currentPage !== 'Home' && <Header />}
       {currentPage !== 'Home' && <Navigation />}
       */}
-      
+      <Header />
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {/*
       {includeHeader()}
