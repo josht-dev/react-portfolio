@@ -10,6 +10,15 @@ import Header from './Header';
 import Footer from './Footer';
 import '../styles/reset.css';
 
+// Styling for main
+const styles = {
+  mainStyle: {
+    width: '812px',
+    margin: 'auto',
+    backgroundColor: '#F5F5F5',
+  }
+}
+
 // Export function that handles page switching
 export default function MainContainer() {
   // Page state
@@ -39,7 +48,7 @@ export default function MainContainer() {
 
   // Return the new component
   return (
-    <main>
+    <main style={styles.mainStyle}>
       {/*
       {currentPage !== 'Home' && <Header />}
       {currentPage !== 'Home' && <Navigation />}
