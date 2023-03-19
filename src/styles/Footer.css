@@ -1,0 +1,68 @@
+/* Contact CSS */
+#contact-me {
+  position: relative;
+  bottom: 10px;
+}
+
+#contact-me ul {
+  margin-top: 8px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+#contact-me li img {
+  height: 34px;
+  width: 34px;
+  object-fit: fill;
+}
+
+#phone:hover::after,
+#phone:active::after {
+  content: "405.742.6825";
+}
+
+#email:hover::after,
+#email:active::after {
+  content: "toasterrage@gmail.com";
+}
+
+.show-contact:hover::after,
+.show-contact:active::after {
+  margin-left: 10px;
+  font-size: 34px;
+  font-weight: 500;
+  position: relative;
+  bottom: 3px;
+}
+
+@media screen and (max-width: 719px) {
+  #contact-me ul {
+    flex-flow: row wrap;
+    height: fit-content;
+  }
+
+  #contact-me li {
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  #email:hover::after,
+  #email:active::after {
+    position: relative;
+    right: 175px;
+  }
+
+  .show-contact:hover::after,
+  .show-contact:active::after {
+    margin-left: 5px;
+    font-size: 24px;
+    right: 50px;
+    top: 25px;
+  }
+}
