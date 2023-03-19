@@ -34,6 +34,18 @@ export default function MainContainer() {
     }
   }
 
+  // The homepage does not use the normal header and navigation components
+  const includeHeader = () => {
+    if (currentPage !== 'Home') {
+      return <Header />;
+    }
+  }
+  const includeNav = () => {
+    if (currentPage !== 'Home') {
+      return <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />;
+    }
+  }
+
   // Function to handle the page change
   const handlePageChange = (page) => setCurrentPage(page);
    
@@ -41,11 +53,11 @@ export default function MainContainer() {
   return (
     <main>
       {/*
-      <Header />
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      {includeHeader()}
+      {includeNav()}
       {renderPage()} 
       */}
-      
+            
       <Footer />
     </main>
   );
