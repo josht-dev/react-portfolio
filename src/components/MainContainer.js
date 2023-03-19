@@ -8,6 +8,7 @@ import Work from './pages/Work';
 import Navigation from './Navigation';
 import Header from './Header';
 import Footer from './Footer';
+import '../styles/reset.css';
 
 // Export function that handles page switching
 export default function MainContainer() {
