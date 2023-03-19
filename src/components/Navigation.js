@@ -1,5 +1,6 @@
 // *****Import Modules*****
 import React from 'react';
+import '../styles/Navigation.css';
 
 // Function to generate the nav component
 function Navigation({ currentPage, handlePageChange }) {
