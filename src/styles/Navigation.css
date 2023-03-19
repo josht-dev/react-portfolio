@@ -1,0 +1,19 @@
+nav {
+    margin-bottom: 350px;
+}
+
+nav li {
+    margin-bottom: 24px;
+}
+
+nav a {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 58px;
+    color: #89AD6D;
+    text-decoration: none;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
