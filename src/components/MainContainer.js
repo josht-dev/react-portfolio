@@ -51,19 +51,9 @@ export default function MainContainer() {
   // Return the new component
   return (
     <main style={styles.mainStyle}>
-      {/*
-      {currentPage !== 'Home' && <Header />}
-      {currentPage !== 'Home' && <Navigation />}
-      */}
       <Header />
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/*
-      {includeHeader()}
-      {includeNav()}
-      {renderPage()} 
-      {renderPage()} 
-      */}
-      
+      {renderPage()}
       <Footer />
     </main>
   );
