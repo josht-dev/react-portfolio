@@ -39,9 +39,12 @@ export default function MainContainer() {
   // Return the new component
   return (
     <main>
+      {/*
       <Header />
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      {renderPage()} 
+      */}
+      
       <Footer />
     </main>
   );
