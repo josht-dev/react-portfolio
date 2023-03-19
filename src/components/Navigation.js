@@ -14,6 +14,30 @@ function Navigation({ currentPage, handlePageChange }) {
             About
           </a>
         </li>
+        <li>
+          <a 
+          href='#contact' 
+          onClick={() => handlePageChange('Contact')} 
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a 
+          href='#resume' 
+          onClick={() => handlePageChange('Resume')} 
+          >
+            Resume
+          </a>
+        </li>
+        <li>
+          <a 
+          href='#work' 
+          onClick={() => handlePageChange('Work')} 
+          >
+            Work
+          </a>
+        </li>
       </ul>
     </nav>
   )
