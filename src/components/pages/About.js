@@ -1,6 +1,6 @@
 // *****Import Modules*****
 import React from 'react';
-import selfPic from '../assets/images/portfolio_pic.jpg';
+import selfPic from '../../assets/images/portfolio_pic.jpg';
 
 // Function to generate the About page component
 function About() {
