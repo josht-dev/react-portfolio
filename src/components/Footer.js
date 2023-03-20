@@ -37,7 +37,7 @@ const styles = {
 }
 
 // Export react component
-export default function Footer({ currentPage, handlePageChange }) {
+export default function Footer({ handlePageChange }) {
   return (
     <footer id='contact-me' style={styles.footerStyle}>
       <ul style={styles.ulStyle}>
