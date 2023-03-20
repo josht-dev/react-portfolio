@@ -33,7 +33,7 @@ export default function Project(props) {
   }
 
   return (
-    <div style={styles.projectStyle}>
+    <div style={styles.projectStyle} key={props.id}>
       <div style={styles.titleStyle}>
         <h2>{props.title}</h2>
       </div>
