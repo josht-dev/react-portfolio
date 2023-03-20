@@ -4,7 +4,11 @@ import React from 'react';
 // Component styling
 const styles = {
   sectionStyle: {
-    width: '100%'
+    width: '100%',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    margin: '96px 0 80px 0'
   }
 }
 
@@ -26,7 +30,7 @@ const props = [
 export default function Work() {
   return (
     <section style={styles.sectionStyle}>
-
+      {}
     </section>
   );
 }
