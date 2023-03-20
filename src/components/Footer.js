@@ -37,7 +37,7 @@ const styles = {
 }
 
 // Export react component
-export default function Footer() {
+export default function Footer({ currentPage, handlePageChange }) {
   return (
     <footer id='contact-me' style={styles.footerStyle}>
       <ul style={styles.ulStyle}>
@@ -45,7 +45,9 @@ export default function Footer() {
           <img src={phoneIcon} alt="phone icon" style={styles.imgStyle}></img>
         </li>
         <li id='email' className='show-contact' style={styles.liStyle}>
-          <img src={emailIcon} alt="email icon" style={styles.imgStyle}></img>
+          <a href='#contact' onClick={() => handlePageChange('Contact')} >
+            <img src={emailIcon} alt="email icon" style={styles.imgStyle}></img>
+          </a>
         </li>
         <li style={styles.liStyle}>
           <a href="https://github.com/josht-dev" target="_blank" rel="noreferrer">
