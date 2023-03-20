@@ -1,5 +1,6 @@
 // *****Import Modules*****
 import React from 'react';
+import Project from '../Project';
 
 // Component styling
 const styles = {
@@ -12,25 +13,13 @@ const styles = {
   }
 }
 
-/* props array template
-const props = [
-  {
-    title: '',
-    href: '',
-    link: '',
-    alt: '',
-    projectSize: '',
-    imgPosition: '',
-    imgHeight: ''
-  }
-]
-*/
-
 // Export react component
-export default function Work() {
+export default function Work(props) {
   return (
     <section style={styles.sectionStyle}>
-      {}
+      {props.projects.map(item => (
+        <Project project={item} />
+      ))}
     </section>
   );
 }
