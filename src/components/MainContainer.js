@@ -11,20 +11,20 @@ import Footer from './Footer';
 import '../styles/reset.css';
 import '../styles/Style.css';
 
-// Styling for main
-const styles = {
-  mainStyle: {
-    width: '812px',
-    margin: 'auto',
-    backgroundColor: '#F5F5F5',
-    textAlign: 'center'
-  }
-}
-
 // Export function that handles page switching
 export default function MainContainer() {
   // Page state
   const [currentPage, setCurrentPage] = useState('Home');
+
+  // Styling for main
+  const styles = {
+    mainStyle: {
+      width: '812px',
+      margin: 'auto',
+      backgroundColor: '#F5F5F5',
+      textAlign: currentPage === 'Home' ? 'center' : 'initial'
+    }
+  }
 
   // Switch render between pages when called
   const renderPage = () => {
