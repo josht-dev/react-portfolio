@@ -19,7 +19,7 @@ export default function MainContainer() {
   // Styling for main
   const styles = {
     mainStyle: {
-      textAlign: currentPage === 'Home' ? 'center' : 'initial'
+      textAlign: currentPage === 'Home' ? 'center' : 'initial',
     }
   }
 

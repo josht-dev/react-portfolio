@@ -11,8 +11,8 @@ const styles = {
   footerStyle: {
     position: 'fixed',
     bottom: '16px',
-    right: 0,
-    width: '100%',
+    left: '20%',
+    width: '60%',
     padding: '1rem'
   },
   ulStyle: {
@@ -22,7 +22,6 @@ const styles = {
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'space-between',
-    justifyItems: 'center',
     alignItems: 'center'
   },
   liStyle: {
