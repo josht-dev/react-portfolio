@@ -11,6 +11,40 @@ import Footer from './Footer';
 import '../styles/reset.css';
 import '../styles/Style.css';
 
+// Project work objects array props
+const projects = [
+  {
+    id: 1,
+    title: 'The Table',
+    href: 'https://the-table-app.herokuapp.com/',
+    link: './assets/images/thetableapp.png',
+    alt: 'the table app',
+    projectSize: '100%',
+    imgPosition: 'top left',
+    imgHeight: '500px'
+  },
+  {
+    id: 2,
+    title: 'A Landing Page',
+    href: 'https://josht-dev.github.io/landing-page-wk1-mini-project/',
+    link: './assets/images/josht-dev.github.io_landing-page-wk1-mini-project_.png',
+    alt: 'landing page project',
+    projectSize: '49%',
+    imgPosition: 'top center',
+    imgHeight: '250px'
+  },
+  {
+    id: 3,
+    title: 'Horiseon Refactor',
+    href: 'https://josht-dev.github.io/wk1c-marketing-accessibility-refactor/',
+    link: './assets/images/josht-dev.github.io_wk1c-marketing-accessibility-refactor.png',
+    alt: 'Horiseon website',
+    projectSize: '49%',
+    imgPosition: 'top center',
+    imgHeight: '250px'
+  }
+]
+
 // Export function that handles page switching
 export default function MainContainer() {
   // Page state
@@ -38,7 +72,7 @@ export default function MainContainer() {
       return <Resume />;
     }
     if (currentPage === 'Work') {
-      return <Work />;
+      return <Work projects={projects}/>;
     }
   }
 
