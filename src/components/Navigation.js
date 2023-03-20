@@ -4,54 +4,51 @@ import '../styles/Navigation.css';
 
 // Function to generate the nav component
 function Navigation({ currentPage, handlePageChange }) {
-  // Component styling
-  const styles = {
-    activeLink: {
-      fontWeight: 700
-    },
-    inactiveLink: {
-      fontWeight: 300
+  // Return the style obj for the link
+  const activeLink = (link) => {
+    const fontWeight = (currentPage === link && currentPage !== 'Home') ? 700: 300;
+
+    return {
+      fontSize: currentPage === 'Home' ? '32px' : '18px',
+      fontWeight: fontWeight,
+      lineHeight: currentPage === 'Home' ? '58px' : '38px',
+      color: '#89AD6D',
+      textDecoration: 'none'
     }
   }
-  
+
+  // Component styling
+  const styles = {
+    navStyle: {
+      marginBottom: '350px'
+    },
+    liStyle: {
+      marginBottom: '24px'
+    }
+  }
+
   return (
     <nav>
       <ul>
         <li>
-          <a 
-          href='#about' 
-          onClick={() => handlePageChange('About')} 
-          style={currentPage === 'About' ? styles.activeLink : styles.inactiveLink}
-          >
-            About
-          </a>
+          <a href='#about' onClick={() => handlePageChange('About')} 
+          style={activeLink('About')}
+          >About</a>
         </li>
         <li>
-          <a 
-          href='#contact' 
-          onClick={() => handlePageChange('Contact')} 
-          style={currentPage === 'Contact' ? styles.activeLink : styles.inactiveLink}
-          >
-            Contact
-          </a>
+          <a href='#contact' onClick={() => handlePageChange('Contact')} 
+          style={activeLink('Contact')}
+          >Contact</a>
         </li>
         <li>
-          <a 
-          href='#resume' 
-          onClick={() => handlePageChange('Resume')} 
-          style={currentPage === 'Resume' ? styles.activeLink : styles.inactiveLink}
-          >
-            Resume
-          </a>
+          <a href='#resume' onClick={() => handlePageChange('Resume')} 
+          style={activeLink('Resume')}
+          >Resume</a>
         </li>
         <li>
-          <a 
-          href='#work' 
-          onClick={() => handlePageChange('Work')} 
-          style={currentPage === 'Work' ? styles.activeLink : styles.inactiveLink}
-          >
-            Work
-          </a>
+          <a href='#work' onClick={() => handlePageChange('Work')} 
+          style={activeLink('Work')}
+          >Work</a>
         </li>
       </ul>
     </nav>
