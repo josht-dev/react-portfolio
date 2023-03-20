@@ -1,5 +1,4 @@
 // *****Import Modules*****
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import '../styles/Navigation.css';
 
@@ -24,8 +23,8 @@ function Navigation({ currentPage, handlePageChange }) {
       marginBottom: currentPage === 'Home' ? '350px' : '16px'
     },
     ulStyle: {
-      display: 'flex',
-      justifyContent: 'space-between'
+      display: currentPage === 'Home' ? 'initial' : 'flex',
+      justifyContent: currentPage === 'Home' ? 'initial' : 'space-between'
     },
     liStyle: {
       marginBottom: '24px'
