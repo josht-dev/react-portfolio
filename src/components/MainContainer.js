@@ -51,7 +51,7 @@ export default function MainContainer() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      <Footer />
+      <Footer handlePageChange={handlePageChange} />
     </main>
   );
 }
