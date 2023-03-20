@@ -2,17 +2,18 @@
 import React from 'react';
 import '../styles/Navigation.css';
 
-const styles = {
-  activeLink: {
-    fontWeight: 700
-  },
-  inactiveLink: {
-    fontWeight: 300
-  }
-}
-
 // Function to generate the nav component
 function Navigation({ currentPage, handlePageChange }) {
+  // Component styling
+  const styles = {
+    activeLink: {
+      fontWeight: 700
+    },
+    inactiveLink: {
+      fontWeight: 300
+    }
+  }
+  
   return (
     <nav>
       <ul>
