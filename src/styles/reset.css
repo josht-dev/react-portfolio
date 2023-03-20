@@ -1,33 +1,68 @@
-/* Resets the box size of every element */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* My personal CSS Reset file */
+/* Reset styling for all elements */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set height for document */
+html {
+  height: 100%;
+}
+
+/* Set scroll-behavior for page */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Default body styles */
+body {
+  /*min-height: 100vh;*/
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+/* Set input and button type elements to inherit fonts */
+button, code, input, optgroup, pre, select, textarea {
+  font: inherit;
+  font-size: 100%;
+}
+
+/* Set default decoration for anchor tags */
+a {
+  text-decoration-skip-ink: auto;
+}
+
+/* Remove list element styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Make images a bit easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Change animations, transitions, and scroll behavior 
+for users that prefer reduced motion */
+/* Recommended by https://piccalil.li/ in a blog */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+  scroll-behavior: auto;
   }
   
-  /* Gives the body element a parent height to compare against */
-  html {
-    height: 100%;
+  *,
+  *::before,
+  *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.01ms !important;
   }
-  
-  body {
-    min-height: 100%;
-    line-height: 1;
-    font-family: sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-  }
-  
-  /* Matches the font of special elements to the rest of the page */
-  input, select, option, optgroup, textarea, button,
-  pre, code {
-    font-size: 100%;
-    font-family: inherit;
-  }
-  
-  /* Removes default bullet points from lists */
-  ol, ul {
-    list-style: none;
-  }
+}

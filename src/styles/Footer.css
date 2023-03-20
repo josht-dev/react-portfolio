@@ -4,36 +4,9 @@
   content: "405.742.6825";
 }
 
-#email:hover::after,
-#email:active::after {
-  content: "toasterrage@gmail.com";
-}
-
 .show-contact:hover::after,
 .show-contact:active::after {
   margin-left: 10px;
   font-size: 34px;
   font-weight: 500;
-  position: relative;
-  bottom: 3px;
-}
-
-@media screen and (max-width: 719px) {
-  #contact-me ul {
-    height: fit-content;
-  }
-
-  #email:hover::after,
-  #email:active::after {
-    position: relative;
-    right: 175px;
-  }
-
-  .show-contact:hover::after,
-  .show-contact:active::after {
-    margin-left: 5px;
-    font-size: 24px;
-    right: 50px;
-    top: 25px;
-  }
 }

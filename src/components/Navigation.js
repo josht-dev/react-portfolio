@@ -20,7 +20,7 @@ function Navigation({ currentPage, handlePageChange }) {
   // Component styling
   const styles = {
     navStyle: {
-      marginBottom: currentPage === 'Home' ? '350px' : '16px'
+      marginBottom: currentPage === 'Home' ? '32px' : '16px'
     },
     ulStyle: {
       display: currentPage === 'Home' ? 'initial' : 'flex',

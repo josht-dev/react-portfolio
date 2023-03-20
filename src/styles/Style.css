@@ -4,5 +4,9 @@
 /* Universally used styling rules */
 * {
   font-family: "Montserrat", serif;
-  scroll-behavior: smooth;
+}
+
+body {
+  margin: 1rem;
+  background-color: #F5F5F5;
 }

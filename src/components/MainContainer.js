@@ -19,9 +19,6 @@ export default function MainContainer() {
   // Styling for main
   const styles = {
     mainStyle: {
-      width: '812px',
-      margin: 'auto',
-      backgroundColor: '#F5F5F5',
       textAlign: currentPage === 'Home' ? 'center' : 'initial'
     }
   }

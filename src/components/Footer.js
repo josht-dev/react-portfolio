@@ -10,16 +10,23 @@ import linkedinIcon from '../assets/icons/LinkedIn_icon.svg';
 const styles = {
   footerStyle: {
     position: 'fixed',
-    bottom: '10px',
-    width: '100%'
+    bottom: '16px',
+    right: 0,
+    width: '100%',
+    padding: '1rem'
   },
   ulStyle: {
     marginTop: '8px',
     height: '48px',
+    width: '100%',
     display: 'flex',
     flexFlow: 'row wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     justifyItems: 'center',
+    alignItems: 'center'
+  },
+  liStyle: {
+    display: 'flex',
     alignItems: 'center'
   },
   imgStyle: {
@@ -34,18 +41,18 @@ export default function Footer() {
   return (
     <footer id='contact-me' style={styles.footerStyle}>
       <ul style={styles.ulStyle}>
-        <li id='phone' className='show-contact'>
+        <li id='phone' className='show-contact' style={styles.liStyle}>
           <img src={phoneIcon} alt="phone icon" style={styles.imgStyle}></img>
         </li>
-        <li id='email' className='show-contact'>
+        <li id='email' className='show-contact' style={styles.liStyle}>
           <img src={emailIcon} alt="email icon" style={styles.imgStyle}></img>
         </li>
-        <li>
+        <li style={styles.liStyle}>
           <a href="https://github.com/josht-dev" target="_blank" rel="noreferrer">
             <img src={githubIcon} alt="github icon" style={styles.imgStyle}></img>
           </a>
         </li>
-        <li>
+        <li style={styles.liStyle}>
           <a href="https://www.linkedin.com/in/joshua-taylor-43ab14145" target="_blank" rel="noreferrer">
             <img src={linkedinIcon} alt="linkedin icon" style={styles.imgStyle}></img>
           </a>

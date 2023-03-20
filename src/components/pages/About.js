@@ -5,7 +5,7 @@ import selfPic from '../../assets/images/portfolio_pic.jpg';
 const styles = {
   sectionStyle: {
     display: 'flex',
-    
+    paddingBottom: '5.5rem'
   },
   figureStyle: {
     width: '50%',
