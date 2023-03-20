@@ -6,7 +6,11 @@ export default function Project(props) {
   // Component styling
   const styles = {
     projectStyle: {
-      width: props.projectSize
+      width: props.projectSize,
+      height: 'auto',
+      position: 'relative',
+      margin: '8px 0',
+      zIndex: 1
     },
     titleStyle: {
       position: 'absolute',
