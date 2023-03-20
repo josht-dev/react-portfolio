@@ -1,25 +1,4 @@
 /* Contact CSS */
-#contact-me {
-  position: relative;
-  bottom: 10px;
-}
-
-#contact-me ul {
-  margin-top: 8px;
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-}
-
-#contact-me li img {
-  height: 34px;
-  width: 34px;
-  object-fit: fill;
-}
-
 #phone:hover::after,
 #phone:active::after {
   content: "405.742.6825";
