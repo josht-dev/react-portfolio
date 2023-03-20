@@ -1,4 +1,5 @@
 // *****Import Modules*****
+import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import '../styles/Navigation.css';
 
@@ -20,7 +21,11 @@ function Navigation({ currentPage, handlePageChange }) {
   // Component styling
   const styles = {
     navStyle: {
-      marginBottom: '350px'
+      marginBottom: currentPage === 'Home' ? '350px' : '16px'
+    },
+    ulStyle: {
+      display: 'flex',
+      justifyContent: 'space-between'
     },
     liStyle: {
       marginBottom: '24px'
@@ -28,24 +33,24 @@ function Navigation({ currentPage, handlePageChange }) {
   }
 
   return (
-    <nav>
-      <ul>
-        <li>
+    <nav style={styles.navStyle}>
+      <ul style={styles.ulStyle}>
+        <li style={styles.liStyle}>
           <a href='#about' onClick={() => handlePageChange('About')} 
           style={activeLink('About')}
           >About</a>
         </li>
-        <li>
+        <li style={styles.liStyle}>
           <a href='#contact' onClick={() => handlePageChange('Contact')} 
           style={activeLink('Contact')}
           >Contact</a>
         </li>
-        <li>
+        <li style={styles.liStyle}>
           <a href='#resume' onClick={() => handlePageChange('Resume')} 
           style={activeLink('Resume')}
           >Resume</a>
         </li>
-        <li>
+        <li style={styles.liStyle}>
           <a href='#work' onClick={() => handlePageChange('Work')} 
           style={activeLink('Work')}
           >Work</a>
