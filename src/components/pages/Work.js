@@ -8,6 +8,20 @@ const styles = {
   }
 }
 
+/* props array template
+const props = [
+  {
+    title: '',
+    href: '',
+    link: '',
+    alt: '',
+    projectSize: '',
+    imgPosition: '',
+    imgHeight: ''
+  }
+]
+*/
+
 // Export react component
 export default function Work() {
   return (
