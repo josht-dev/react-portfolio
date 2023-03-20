@@ -9,14 +9,15 @@ import linkedinIcon from '../assets/icons/LinkedIn_icon.svg';
 // Component styling, pseudo-class and pseudo-element styling still in external file
 const styles = {
   footerStyle: {
-    position: 'relative',
-    bottom: '10px'
+    position: 'fixed',
+    bottom: '10px',
+    width: '100%'
   },
   ulStyle: {
     marginTop: '8px',
     height: '48px',
     display: 'flex',
-    flexDirection: 'row',
+    flexFlow: 'row wrap',
     justifyContent: 'space-around',
     justifyItems: 'center',
     alignItems: 'center'
