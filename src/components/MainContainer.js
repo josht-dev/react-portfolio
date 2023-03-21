@@ -48,6 +48,70 @@ const projects = [
   }
 ]
 
+// Resume proficiency objects array props
+const proficiencies = {
+  frontend: [
+    {
+      id: 1,
+      text: 'HTML'
+    },
+    {
+      id: 2,
+      text: 'CSS'
+    },
+    {
+      id: 3,
+      text: 'JavaScript'
+    },
+    {
+      id: 4,
+      text: 'JQuery'
+    },
+    {
+      id: 5,
+      text: 'Responsive Design'
+    },
+    {
+      id: 6,
+      text: 'React'
+    },
+    {
+      id: 7,
+      text: 'Bootstrap'
+    }
+  ],
+  backend: [
+    {
+      id: 1,
+      text: 'Node'
+    },
+    {
+      id: 2,
+      text: 'Express'
+    },
+    {
+      id: 3,
+      text: 'SQL'
+    },
+    {
+      id: 4,
+      text: 'Sequelize'
+    },
+    {
+      id: 5,
+      text: 'MongoDB'
+    },
+    {
+      id: 6,
+      text: 'GraphQL'
+    },
+    {
+      id: 7,
+      text: 'Mongoose'
+    }
+  ]
+}
+
 // Export function that handles page switching
 export default function MainContainer() {
   // Page state
@@ -72,7 +136,7 @@ export default function MainContainer() {
       return <Contact />;
     }
     if (currentPage === 'Resume') {
-      return <Resume />;
+      return <Resume proficiencies={proficiencies}/>;
     }
     if (currentPage === 'Work') {
       return <Work projects={projects}/>;
