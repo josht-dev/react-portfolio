@@ -33,15 +33,15 @@ export default function Contact() {
   return (
     <form>
       <div style={styles.divStyle}>
-        <label style={styles.labelStyle} for='name'>Name</label>
+        <label style={styles.labelStyle} htmlFor='name'>Name</label>
         <input style={styles.inputStyle} id='name' name='name'></input>
       </div>
       <div style={styles.divStyle}>
-        <label style={styles.labelStyle} for='email'>Email Address</label>
+        <label style={styles.labelStyle} htmlFor='email'>Email Address</label>
         <input style={styles.inputStyle} type='email' id='email' name='email'></input>
       </div>
       <div style={styles.divStyle}>
-        <label style={styles.labelStyle} for='message'>Message</label>
+        <label style={styles.labelStyle} htmlFor='message'>Message</label>
         <textarea style={styles.textareaStyle} id='message' name='message'></textarea>
       </div>
       <div style={styles.divStyle}>
