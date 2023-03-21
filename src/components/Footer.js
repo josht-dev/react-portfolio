@@ -13,7 +13,7 @@ export default function Footer({ currentPage, handlePageChange }) {
   const getPosition = () => {
     if (currentPage === 'Work') {
       return 'relative';
-    } else if (currentPage === 'Home' || currentPage === 'Contact') {
+    } else if (currentPage === 'Home' || currentPage === 'Contact' || currentPage === 'Resume') {
       return 'fixed';
     } else if (window.innerWidth <= 720) {
       return 'relative';

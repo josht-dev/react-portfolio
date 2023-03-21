@@ -121,6 +121,7 @@ export default function MainContainer() {
   const styles = {
     mainStyle: {
       textAlign: currentPage === 'Home' ? 'center' : 'initial',
+      padding: '1rem'
     }
   }
 
