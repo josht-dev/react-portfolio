@@ -17,7 +17,7 @@ const projects = [
     id: 1,
     title: 'The Table',
     href: 'https://the-table-app.herokuapp.com/',
-    link: '../assets/images/thetableapp.png',
+    link: '../../assets/images/thetableapp.png',
     alt: 'the table app',
     projectSize: '100%',
     imgPosition: 'top left',
