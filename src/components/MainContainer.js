@@ -10,6 +10,9 @@ import Header from './Header';
 import Footer from './Footer';
 import '../styles/reset.css';
 import '../styles/Style.css';
+import theTable from '../assets/images/thetableapp.png';
+import weekOne from '../assets/images/landing-page-wk1-mini-project_.png';
+import horiseon from '../assets/images/marketing-accessibility-refactor.png';
 
 // Project work objects array props
 const projects = [
@@ -17,7 +20,7 @@ const projects = [
     id: 1,
     title: 'The Table',
     href: 'https://the-table-app.herokuapp.com/',
-    link: '../../assets/images/thetableapp.png',
+    link: theTable,
     alt: 'the table app',
     projectSize: '100%',
     imgPosition: 'top left',
@@ -27,7 +30,7 @@ const projects = [
     id: 2,
     title: 'A Landing Page',
     href: 'https://josht-dev.github.io/landing-page-wk1-mini-project/',
-    link: '../assets/images/landing-page-wk1-mini-project_.png',
+    link: weekOne,
     alt: 'landing page project',
     projectSize: '49%',
     imgPosition: 'top center',
@@ -37,7 +40,7 @@ const projects = [
     id: 3,
     title: 'Horiseon Refactor',
     href: 'https://josht-dev.github.io/wk1c-marketing-accessibility-refactor/',
-    link: '../assets/images/marketing-accessibility-refactor.png',
+    link: horiseon,
     alt: 'Horiseon website',
     projectSize: '49%',
     imgPosition: 'top center',
