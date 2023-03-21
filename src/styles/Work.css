@@ -1,0 +1,3 @@
+.project-img:hover, .project-img:active {
+  filter: blur(0) brightness(100%);
+}
