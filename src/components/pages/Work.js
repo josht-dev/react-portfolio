@@ -1,7 +1,6 @@
 // *****Import Modules*****
 import React from 'react';
 import Project from '../Project';
-import '../../styles/Work.css';
 
 // Component styling
 const styles = {

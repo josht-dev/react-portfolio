@@ -1,5 +1,6 @@
 // *****Import Modules*****
 import React from 'react';
+import '../styles/Work.css';
 
 // Export react component
 export default function Project(props) {
@@ -30,7 +31,6 @@ export default function Project(props) {
       overflow: 'hidden',
       objectFit: 'none',
       objectPosition: project.imgPosition,
-      filter: 'blur(5px) brightness(60%)',
       height: project.imgHeight
     }
   }
@@ -41,7 +41,7 @@ export default function Project(props) {
         <h2>{project.title}</h2>
       </div>
       <a href={project.href} target='_blank' rel="noreferrer">
-        <img style={styles.imgStyle} src={project.link} alt={project.alt} className="project-img"></img>
+        <img style={styles.imgStyle} src={project.link} alt={project.alt} className='project-img'></img>
       </a>
     </div>
   );
