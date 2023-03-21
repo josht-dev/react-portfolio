@@ -18,7 +18,7 @@ export default function Work(props) {
   return (
     <section style={styles.sectionStyle}>
       {props.projects.map(item => (
-        <Project project={item} />
+        <Project project={item} key={item.id}/>
       ))}
     </section>
   );

@@ -3,10 +3,14 @@ import React from 'react';
 
 // Export react component
 export default function Project(props) {
+  // Pull nested object out of props
+  const project = props.project;
+
   // Component styling
+  console.log(props.project);
   const styles = {
     projectStyle: {
-      width: props.projectSize,
+      width: project.projectSize,
       height: 'auto',
       position: 'relative',
       margin: '8px 0',
@@ -26,19 +30,19 @@ export default function Project(props) {
       width: '100%',
       overflow: 'hidden',
       objectFit: 'none',
-      objectPosition: props.imgPosition,
+      objectPosition: project.imgPosition,
       filter: 'blur(5px) brightness(60%)',
-      height: props.imgHeight
+      height: project.imgHeight
     }
   }
 
   return (
-    <div style={styles.projectStyle} key={props.id}>
+    <div style={styles.projectStyle} key={project.id}>
       <div style={styles.titleStyle}>
-        <h2>{props.title}</h2>
+        <h2>{project.title}</h2>
       </div>
-      <a href={props.href} target='_blank' rel="noreferrer">
-        <img style={styles.imgStyle} src={props.link} alt={props.alt}></img>
+      <a href={project.href} target='_blank' rel="noreferrer">
+        <img style={styles.imgStyle} src={project.link} alt={project.alt}></img>
       </a>
     </div>
   );
