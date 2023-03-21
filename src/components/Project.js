@@ -7,7 +7,6 @@ export default function Project(props) {
   const project = props.project;
 
   // Component styling
-  console.log(props.project);
   const styles = {
     projectStyle: {
       width: project.projectSize,
@@ -37,7 +36,7 @@ export default function Project(props) {
   }
 
   return (
-    <div style={styles.projectStyle} key={project.id}>
+    <div style={styles.projectStyle}>
       <div style={styles.titleStyle}>
         <h2>{project.title}</h2>
       </div>
