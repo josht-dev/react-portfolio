@@ -41,7 +41,7 @@ export default function Project(props) {
         <h2>{project.title}</h2>
       </div>
       <a href={project.href} target='_blank' rel="noreferrer">
-        <img style={styles.imgStyle} src={project.link} alt={project.alt}></img>
+        <img style={styles.imgStyle} src={project.link} alt={project.alt} className="project-img"></img>
       </a>
     </div>
   );
