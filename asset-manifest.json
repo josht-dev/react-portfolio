@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9bd17742.css",
+    "main.js": "/react-portfolio/static/js/main.c1e459ed.js",
+    "static/media/portfolio_pic.jpg": "/react-portfolio/static/media/portfolio_pic.9bce889d49720d8660e4.jpg",
+    "static/media/marketing-accessibility-refactor.png": "/react-portfolio/static/media/marketing-accessibility-refactor.200a194cb264e13f8b23.png",
+    "static/media/thetableapp.png": "/react-portfolio/static/media/thetableapp.a504c1950e7da253431c.png",
+    "static/media/landing-page-wk1-mini-project_.png": "/react-portfolio/static/media/landing-page-wk1-mini-project_.bf88a9ad2f4ebb2e2fda.png",
+    "static/media/GitHub_icon.svg": "/react-portfolio/static/media/GitHub_icon.10cb65cddd46a77c40db7f7527e00205.svg",
+    "static/media/phone_icon.svg": "/react-portfolio/static/media/phone_icon.26d5ed6c740ffc36e5fd61e26ea83b28.svg",
+    "static/media/LinkedIn_icon.svg": "/react-portfolio/static/media/LinkedIn_icon.67d9924978131eea32ba5e8cbe564a4f.svg",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/email_icon.svg": "/react-portfolio/static/media/email_icon.8b898797f2d6de8ed5014d862bee84d3.svg",
+    "main.9bd17742.css.map": "/react-portfolio/static/css/main.9bd17742.css.map",
+    "main.c1e459ed.js.map": "/react-portfolio/static/js/main.c1e459ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bd17742.css",
+    "static/js/main.c1e459ed.js"
+  ]
+}
