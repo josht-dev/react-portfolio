@@ -24,7 +24,7 @@ const projects = [
     alt: 'the table app',
     projectSize: '100%',
     imgPosition: 'top left',
-    imgHeight: '500px'
+    imgHeight: window.innerWidth <= 414 ? '250px' : '500px'
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const projects = [
     href: 'https://josht-dev.github.io/landing-page-wk1-mini-project/',
     link: weekOne,
     alt: 'landing page project',
-    projectSize: '49%',
+    projectSize: window.innerWidth <= 540 ? '100%' : '49%',
     imgPosition: 'top center',
     imgHeight: '250px'
   },
@@ -42,7 +42,7 @@ const projects = [
     href: 'https://josht-dev.github.io/wk1c-marketing-accessibility-refactor/',
     link: horiseon,
     alt: 'Horiseon website',
-    projectSize: '49%',
+    projectSize: window.innerWidth <= 540 ? '100%' : '49%',
     imgPosition: 'top center',
     imgHeight: '250px'
   }
@@ -88,7 +88,7 @@ export default function MainContainer() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      <Footer handlePageChange={handlePageChange} />
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </main>
   );
 }

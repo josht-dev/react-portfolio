@@ -6,37 +6,52 @@ import emailIcon from '../assets/icons/email_icon.svg';
 import githubIcon from '../assets/icons/GitHub_icon.svg';
 import linkedinIcon from '../assets/icons/LinkedIn_icon.svg';
 
-// Component styling, pseudo-class and pseudo-element styling still in external file
-const styles = {
-  footerStyle: {
-    position: 'fixed',
-    bottom: '16px',
-    left: '20%',
-    width: '60%',
-    padding: '1rem'
-  },
-  ulStyle: {
-    marginTop: '8px',
-    height: '48px',
-    width: '100%',
-    display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  liStyle: {
-    display: 'flex',
-    alignItems: 'center'
-  },
-  imgStyle: {
-    height: '34px',
-    width: '34px',
-    objectFit: 'fill'
-  }
-}
-
 // Export react component
-export default function Footer({ handlePageChange }) {
+export default function Footer({ currentPage, handlePageChange }) {
+
+  // Determine if position should be relative by window width or page
+  const getPosition = () => {
+    if (currentPage === 'Work') {
+      return 'relative';
+    } else if (currentPage === 'Home' || currentPage === 'Contact') {
+      return 'fixed';
+    } else if (window.innerWidth <= 720) {
+      return 'relative';
+    } else {
+      return 'fixed';
+    }
+  }
+
+  // Component styling, pseudo-class and pseudo-element styling still in external file
+  const styles = {
+    footerStyle: {
+      position: getPosition(),
+      bottom: '16px',
+      left: '20%',
+      width: '60%',
+      padding: '1rem',
+      zIndex: 3
+    },
+    ulStyle: {
+      marginTop: '8px',
+      height: '48px',
+      width: '100%',
+      display: 'flex',
+      flexFlow: 'row wrap',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    },
+    liStyle: {
+      display: 'flex',
+      alignItems: 'center'
+    },
+    imgStyle: {
+      height: '34px',
+      width: '34px',
+      objectFit: 'fill'
+    }
+  }
+
   return (
     <footer id='contact-me' style={styles.footerStyle}>
       <ul style={styles.ulStyle}>

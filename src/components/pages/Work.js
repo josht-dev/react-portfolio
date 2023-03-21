@@ -9,7 +9,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    margin: '96px 0 80px 0'
+    margin: '16px 0'
   }
 }
 
