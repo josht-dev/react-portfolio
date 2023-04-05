@@ -13,18 +13,29 @@ import '../styles/Style.css';
 import theTable from '../assets/images/thetableapp.png';
 import weekOne from '../assets/images/landing-page-wk1-mini-project_.png';
 import horiseon from '../assets/images/marketing-accessibility-refactor.png';
+import theScribe from '../assets/images/thescribe.png';
 
 // Project work objects array props
 const projects = [
+  {
+    id: 0,
+    title: 'The Scribe',
+    href: 'https://the-scribe.herokuapp.com/',
+    link: theScribe,
+    alt: 'the-scribe website',
+    projectSize: '100%',
+    imgPosition: 'top left',
+    imgHeight: window.innerWidth <= 414 ? '250px' : '500px'
+  },
   {
     id: 1,
     title: 'The Table',
     href: 'https://the-table-app.herokuapp.com/',
     link: theTable,
     alt: 'the table app',
-    projectSize: '100%',
+    projectSize: window.innerWidth <= 540 ? '100%' : '49%',
     imgPosition: 'top left',
-    imgHeight: window.innerWidth <= 414 ? '250px' : '500px'
+    imgHeight: '250px'
   },
   {
     id: 2,
